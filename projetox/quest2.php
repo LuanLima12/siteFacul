@@ -46,7 +46,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">1º Questão</h1>
+            <h1 class="h3 mb-0 text-gray-800">2º Questão - Calcular média</h1>
           </div>
 
           <!-- Content Row -->
@@ -58,6 +58,9 @@
               <div class="col-3">
                 <input type="number" value="1" id="dois" name="dois" class="form-control" placeholder="Segundo número">
               </div>
+              <div class="col-3">
+                <input type="number" value="1" id="tres" name="tres" class="form-control" placeholder="terceiro número">
+              </div>
             </div><br>
             <div class="row">
               <div class="col-3">
@@ -67,7 +70,7 @@
           </form>
 
           <?php
-              include "includes/teste.php";
+              include "includes/quest2part2.php";
           ?>
          
         </div>
