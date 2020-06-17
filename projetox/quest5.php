@@ -53,7 +53,7 @@
           <form name="calcular" method="POST" action="" >
             <div class="row">
               <div class="col-3">
-                <input type="number" id="um" name="um" class="form-control" placeholder="Salario inicial">
+                <input type="number" step="0.01" id="um" name="um" class="form-control" placeholder="Salario inicial">
               </div>
               <div class="col-3">
                 <input type="number" step="0.01" id="dois" name="dois" class="form-control" placeholder="Percentual inicial">
