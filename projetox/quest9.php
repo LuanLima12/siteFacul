@@ -46,20 +46,14 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">5º Questão</h1>
+            <h1 class="h3 mb-0 text-gray-800">9º Questão</h1>
           </div>
 
           <!-- Content Row -->
           <form name="calcular" method="POST" action="" >
             <div class="row">
               <div class="col-3">
-                <input type="number" id="um" name="um" class="form-control" placeholder="Salario inicial">
-              </div>
-              <div class="col-3">
-                <input type="number" step="0.01" id="dois" name="dois" class="form-control" placeholder="Percentual inicial">
-              </div>
-              <div class="col-3">
-                <input type="number" id="tres" name="tres" class="form-control" placeholder="Tempo em anos">
+                <input type="number" step="0.01" id="um" name="um" class="form-control" placeholder="Valor do produto">
               </div>
             </div><br>
             <div class="row">
@@ -70,7 +64,7 @@
           </form>
 
           <?php
-              include "includes/quest5part2.php";
+              include "includes/quest9part2.php";
           ?>
          
         </div>

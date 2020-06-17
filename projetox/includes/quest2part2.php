@@ -7,6 +7,6 @@
         $media = ($num1+$num2+$num3)/3;
         return $media;
     }
-        echo "<br><br><br>Média:".media($num1, $num2, $num3);
+        echo "<br><br><br>Média:".number_format(media($num1, $num2, $num3),2);
 
 ?>

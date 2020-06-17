@@ -46,31 +46,30 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">5º Questão</h1>
+            <h1 class="h3 mb-0 text-gray-800">10º Questão</h1>
           </div>
 
           <!-- Content Row -->
           <form name="calcular" method="POST" action="" >
             <div class="row">
               <div class="col-3">
-                <input type="number" id="um" name="um" class="form-control" placeholder="Salario inicial">
+                <label for="um">Distância percorrida</label>
+                <input type="number" id="um" name="um" class="form-control" placeholder="Km">
               </div>
               <div class="col-3">
-                <input type="number" step="0.01" id="dois" name="dois" class="form-control" placeholder="Percentual inicial">
-              </div>
-              <div class="col-3">
-                <input type="number" id="tres" name="tres" class="form-control" placeholder="Tempo em anos">
+                <label for="dois">Quantidade de combústivel gasto</label>
+                <input type="number" id="dois" name="dois" class="form-control" placeholder="Litros">
               </div>
             </div><br>
             <div class="row">
               <div class="col-3">
-                <button type="submit" class="btn btn-primary">OK</button>
+                <button type="submit" class="btn btn-primary">Calcular</button>
               </div>
             </div>
           </form>
 
           <?php
-              include "includes/quest5part2.php";
+              include "includes/quest10part2.php";
           ?>
          
         </div>

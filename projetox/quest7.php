@@ -46,11 +46,19 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">7º Questão</h1>
+            <h1 class="h3 mb-0 text-gray-800">7º Questão - selecione dois números para sortear outros aleatórios entre esses e ter a soma dos dez primeiros números positivos</h1>
           </div>
 
           <!-- Content Row -->
           <form name="calcular" method="POST" action="" >
+            <div class="row">
+              <div class="col-3">
+                <input type="number" value="1" id="um" name="um" class="form-control" placeholder="Primeiro número">
+              </div>
+              <div class="col-3">
+                <input type="number" value="1" id="dois" name="dois" class="form-control" placeholder="Segundo número">
+              </div>
+            </div><br>
             <div class="row">
               <div class="col-3">
                 <button type="submit" class="btn btn-primary">Sortear</button>
@@ -59,7 +67,7 @@
           </form>
 
           <?php
-              include "includes/quest3part2.php";
+              include "includes/quest7part2.php";
           ?>
          
         </div>
