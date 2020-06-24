@@ -37,6 +37,8 @@
 
         <?php
             include "includes/topo.php";
+            include "includes/editar.php";
+            include "includes/conferirEdite.php";
         ?>
 
 
@@ -45,55 +47,59 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Adicionar personagem</h1>
+            <h1 class="h3 mb-0 text-gray-800">Editar personagem</h1>
           </div>
 
           <!-- Content Row -->
           <div class="row">
 
-            <form name="formulario1" method="POST" action="includes/add_personagem.php">
+            <form name="formulario1" method="POST" action="includes/editar2.php?id=<?php echo $id; ?>">
+                <div class="col-sm-6">
+                    <label >Id do personagem</label>
+                    <input type="number" class="form-control" disabled value="<?php echo $id; ?>" id="id" name="id" required>
+                </div>
                 <div class="col-sm-6">
                     <label >Nome do jogador</label>
-                    <input type="text" class="form-control" id="jogador" name="jogador" required>
+                    <input type="text" class="form-control" value="<?php echo $jogador; ?>" id="jogador" name="jogador" required>
                 </div>
                 <div class="col-sm-6">
                     <label >Nome completo do personagem</label>
-                    <input type="text" class="form-control" id="personagem" name="personagem" required>
+                    <input type="text" class="form-control" value="<?php echo $personagem; ?>" id="personagem" name="personagem" required>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-3">
                         <label>Raça</label>
                         <select class="custom-select" id="raca" name="raca">
-                            <option value="humano">Humana</option>
-                            <option value="elfo">Elfica</option>
-                            <option value="besta">Besta</option>
-                            <option value="demonio">Demoniaca</option>
-                            <option value="anao">Anã</option>
+                            <option value="humano" <?php echo racaHumano($raca); ?> >Humana</option>
+                            <option value="elfo" <?php echo racaElfo($raca);?> >Elfica</option>
+                            <option value="besta" <?php echo racaBesta($raca); ?> >Besta</option>
+                            <option value="demonio" <?php echo racaDemonio($raca); ?> >Demoniaca</option>
+                            <option value="anao" <?php echo racaAna($raca); ?> >Anã</option>
                         </select>
-                    </div>
+                    </div> 
                     <div class="col-sm-3">
                         <label>Partes robóticas?</label>
-                        <select class="custom-select" id="cyborgue" name="cyborgue">
-                            <option value="1">Sim</option>
-                            <option value="0">Não</option>
+                        <select class="custom-select" id="cyborgue" name="cyborgue" value="<?php echo $cyborgue; ?>">
+                            <option value="1" <?php echo cyb1($cyborgue); ?> >Sim</option>
+                            <option value="0" <?php echo cyb0($cyborgue); ?> >Não</option>
                         </select>
                     </div>
                     <div class="col-sm-3">
                         <label>Classe</label>
-                        <select class="custom-select" id="classe" name="classe">
-                            <option value="guerreiro">Guerreiro</option>
-                            <option value="ladino">Ladino</option>
-                            <option value="necromante">Necromante</option>
-                            <option value="cacador">Caçador</option>
-                            <option value="druida">Druída</option>
-                            <option value="bardo">Bardo</option>
-                            <option value="berserker">Berserker</option>
-                            <option value="paladino">Paladino</option>
+                        <select class="custom-select" id="classe" name="classe" value="<?php echo $classe; ?>">
+                            <option value="guerreiro" <?php echo classeGue($classe); ?> >Guerreiro</option>
+                            <option value="ladino" <?php echo classeLa($classe); ?> >Ladino</option>
+                            <option value="necromante" <?php echo classeNe($classe); ?> >Necromante</option>
+                            <option value="cacador" <?php echo classeCa($classe); ?> >Caçador</option>
+                            <option value="druida" <?php echo classeDru($classe); ?> >Druída</option>
+                            <option value="bardo" <?php echo classeBar($classe); ?> >Bardo</option>
+                            <option value="berserker" <?php echo classeBer($classe); ?> >Berserker</option>
+                            <option value="paladino" <?php echo classePa($classe); ?> >Paladino</option>
                         </select>
                     </div>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-dark">Cadastrar</button>   
+                    <button type="submit" class="btn btn-dark">Atualizar</button>   
                 </div>
             </form>
 

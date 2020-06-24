@@ -11,27 +11,9 @@
   <!-- Custom styles for this page -->
   <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-    <style>
-
-        a{
-            color: white;
-        }
-
-        a:hover{
-            color: white;
-        }
-
-        i:hover{
-            color: white;
-            background-color: pink;
-        }
-
-        button:hover{
-            color: white;
-            background-color: green;
-        }
-
-    </style>
+    <?php
+          include "includes/styleParaLinks.php";
+    ?>
 
 </head>
 
@@ -48,6 +30,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>ID</th>
                       <th>Jogador</th>
                       <th>Personagem</th>
                       <th>Raça</th>
@@ -57,6 +40,7 @@
                   </thead>
                   <tfoot>
                     <tr>
+                      <th>ID</th>
                       <th>Jogador</th>
                       <th>Personagem</th>
                       <th>Raça</th>
@@ -64,15 +48,11 @@
                       <th>Operações</th>
                     </tr>
                   </tfoot>
-                  <tbody>
-                    <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                    </tr>
+                 
+                    <?php
+                        include "includes/selecionar.php";
+                    ?>
 
-                  </tbody>
                 </table>
               </div>
             </div>
