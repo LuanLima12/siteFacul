@@ -5,11 +5,13 @@ table.dataTable {
   max-width: none !important;
   border-collapse: separate !important;
   border-spacing: 0;
+  border-color: white;
 }
 table.dataTable td,
 table.dataTable th {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  border-color: white;
 }
 table.dataTable td.dataTables_empty,
 table.dataTable th.dataTables_empty {

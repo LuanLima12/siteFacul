@@ -47,7 +47,7 @@ try {
     echo "<td>".$v["personagem"]."</td>";
     echo "<td>".$v["raca"]."</td>";
     echo "<td>".$v["classe"]."</td>";
-    echo '<td><a class="luan"><button type="button" class="btn btn-dark btn-sm"><i class="fa fa-folder-open"></i></button></a>
+    echo '<td><a class="luan" href="visualizar.php?id='.$v['id'].'"><button type="button" class="btn btn-dark btn-sm"><i class="fa fa-folder-open"></i></button></a>
               <a class="luan" href="edite.php?id='.$v['id'].'"><button type="button" class="btn btn-light btn-sm"><i class="fa fa-edit"></i></button></a>
               <a class="luan" href="includes/delete.php?id='.$v['id'].'"><button type="button" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button></a>
           </td>';
