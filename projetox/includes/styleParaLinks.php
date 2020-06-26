@@ -10,13 +10,7 @@
         }
 
         td{
-            width: 44%;
-        }
-
-        hr {
-            border-top: 1px solid #4682B4;
-            width: 100%;
-            margin: 0px 0px 0px 0px;
+            height: 20px;
         }
 
         /*i:hover{
@@ -24,43 +18,64 @@
             background-color: pink;
         }*/
 
+        #lapis:hover{
+            color: #26119c;
+        }
+
         button:hover{
             color: white;
+        }
+
+        #eu{
+            font-family: "Bradley Hand", cursive;
+            color: #26119c;
+        }
+
+        #eu:hover{
+            color: black;
             background-color: green;
-        }
-
-        #direita {
-            text-align: left;
-            float: left;
-            margin-bottom: 0px;
-        }
-
-        #esquerda {
-            text-align: right;
-            float: right;
-            margin-bottom: 0px;
-        }
-
-        #folha{
-            background-color: white;
-        }
-
-        #E{
-            float: left;
-        }
-
-        .C{
-            padding: 20px;
         }
 
         .B{
             width: 80%;
             float: center;
             margin: 0 auto;
+            background-color: white;
+            background-image: url('img/papel.jpg');
+            background-size: 100%;
         }
+
 
         .centro{
             margin: 0 auto;
+        }
+
+        .link2{
+            color:black;
+        }
+
+        .lixo{
+            background-color: #F82020;
+            border-color: #F82020;
+            border-radius: 4px;
+        }
+
+        .lixo:hover{
+            background-color: #F82020;
+            border-color: #F82020;
+            border-radius: 4px;
+        }
+
+        .lapis{
+            background-color: white;
+            border-color: white;
+            border-radius: 4px;
+        }
+
+        .pasta{
+            background-color: #585858;
+            border-color: #585858;
+            border-radius: 4px;
         }
 
 

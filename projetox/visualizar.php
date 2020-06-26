@@ -54,25 +54,8 @@
           </div>
 
           <!-- Content Row -->
-          <div class="row">
+        <div class="row">                
 
-
-          <!--<div class="card shadow mb-4" style="width: 1200px;">
-            <div class="card-header py-3">
-                
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                
-              </div>
-            </div>
-          </div>-->
-
-        <div class="table-responsive">
-                
-
-
-            <!--<div class="card shadow mb-4" style="width: 1200px;">-->
               <div class="B">
                 <div class="table-responsive">
 
@@ -80,7 +63,7 @@
 
                   <div class="form-group row" style="margin-bottom: 0px;">
                     <div  class="centro">
-                    <i> Jogador: <?php echo $jogador; ?> </i>
+                    <i id="eu"> Jogador: <?php echo $jogador; ?> </i>
                     </div>
                   </div>
 
@@ -88,63 +71,61 @@
                   <div class="form-group row" style="margin-bottom: 0px;">
                       <div id= "vazio" class="col-sm-2"></div>
                       <div class="col-sm-6" >
-                      <i> Personagem: <?php echo $personagem; ?> </i>
+                      <i id="eu"> Personagem: <?php echo $personagem; ?> </i>
                       </div>
                       <div id="vazio" class="col-sm-1"></div>
                       <div class="col-sm-1">
-                      <i> ID: <?php echo $id; ?> </i><br>
+                      <i id="eu"> ID: <?php echo $id; ?> </i><br>
                       </div>
                   </div><br>
 
                   <div class="form-group row">
                     <div id="vazio" class="col-sm-2"></div>
                     <div class="col-sm-4">
-                      <i id="i">Raça: <?php echo $raca; ?> </i>
+                      <i id="eu">Raça: <?php echo $raca; ?> </i>
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div id="vazio" class="col-sm-2"></div>
                     <div class="col-sm-4">
-                      <i id="i">Classe: <?php echo $classe; ?> </i>
+                      <i id="eu">Classe: <?php echo $classe; ?> </i>
                     </div>
                   </div><br>
 
                   <div class="form-group row" style="margin-bottom: 0px;">
                     <div  class="centro">
-                      <i id="centro">Atributos</i>
+                      <i id="eu">Atributos</i>
                     </div>
                   </div><br>
 
                   <div class="form-group row" style="margin-bottom: 0px;">
-                    <div id="vazio" class="col-sm-5"></div>
+                    <div id="vazio" class="col-sm-4"></div>
                     <div class="col-sm-2">
-                      <i>Força: <?php echo $forca; ?> </i> 
+                      <i id="eu">Força: <?php echo $forca; ?> </i> 
                     </div>
                     <!--<div id="vazio" class="col-sm-1"></div>-->
                     <div class="col-sm-2">
-                      <i>Mana: <?php echo $mana; ?> </i><br>
+                      <i id="eu">Mana: <?php echo $mana; ?> </i><br>
                     </div><br>
                   </div>
 
                   <div class="form-group row" style="margin-bottom: 0px;">
                     <div id="vazio" class="col-sm-3"></div>
                     <div class="col-sm-2">
-                      <i>Destreza: <?php echo $destreza; ?> </i> 
+                      <i id="eu">Destreza: <?php echo $destreza; ?> </i> 
                     </div>
                     <!--<div id="vazio" class="col-sm-1"></div>-->
                     <div class="col-sm-2">
-                      <i>Resistência: <?php echo $resistencia; ?> </i>
+                      <i id="eu">Resistência: <?php echo $resistencia; ?> </i>
                     </div>
                     <!--<div id="vazio" class="col-sm-1"></div>-->
                     <div class="col-sm-2">
-                      <i>Carisma: <?php echo $carisma; ?> </i>
+                      <i id="eu">Carisma: <?php echo $carisma; ?> </i>
                     </div>
                   </div><br><br><br>
 
                 </div>
-              </div>
-            <!--</div>-->
         </div>
 
 

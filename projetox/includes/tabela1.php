@@ -13,6 +13,7 @@
 
     <?php
           include "includes/styleParaLinks.php";
+
     ?>
 
 </head>
@@ -51,6 +52,7 @@
                  
                     <?php
                         include "includes/selecionar.php";
+                        //include "includes/modal.php";
                     ?>
 
                 </table>
