@@ -4,7 +4,6 @@
 <head>
 
     <?php
-        include "includes/styleParaLinks.php";
     ?>
 
   <meta charset="utf-8">
@@ -32,10 +31,11 @@
         <?php
             include "includes/menulateral.php";
             include "includes/visualizar2.php";
+            include "includes/styleParaLinks.php";
         ?> 
 
     <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content-wrapper" class="d-flex flex-column fundo text-light">
 
       <!-- Main Content -->
       <div id="content">
@@ -50,7 +50,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Visualização de ficha</h1>
+            <h1 class="h3 mb-0">Visualização de ficha</h1>
           </div>
 
           <!-- Content Row -->

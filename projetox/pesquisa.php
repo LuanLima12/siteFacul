@@ -38,6 +38,9 @@
         <?php
             include "includes/topo.php";
             include "includes/conexao.php";
+
+            $jogador = $_POST['jogador'];
+
         ?>
 
 
@@ -46,14 +49,14 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-light">Tabela de personagens</h1>
+            <h1 class="h3 mb-0 text-light">Personagens de <?php echo $jogador; ?></h1>
           </div>
 
           <!-- Content Row -->
           <div class="row">
 
             <?php
-                  include "includes/tabela1.php";
+                  include "includes/tabela2.php";
              ?>
 
           </div>

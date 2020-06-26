@@ -21,16 +21,6 @@
 <body>
 <div class="card shadow mb-4" style="width: 1200px;">
             <div class="card-header py-3">
-                <div class="float-left">
-                  <form name="search" id="search" method="POST" action="pesquisa.php">
-                    <input type="search" class="pesquisa" id="jogador" name="jogador" placeholder="Nome do jogador">
-                    <button type="submit" class="btn btn-dark"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-                <div class="float-right">
-                <button type="button" class="btn btn-dark">
-                <a class="luan" href="add_perso.php"><i class="fa fa-plus-circle"></i> Add personagem</button></a>                
-                </div>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -45,19 +35,9 @@
                       <th>Operações</th>
                     </tr>
                   </thead>
-                  <tfoot>
-                    <tr>
-                      <th>ID</th>
-                      <th>Jogador</th>
-                      <th>Personagem</th>
-                      <th>Raça</th>
-                      <th>Classe</th>
-                      <th>Operações</th>
-                    </tr>
-                  </tfoot>
                  
                     <?php
-                        include "includes/selecionar.php";
+                        include "includes/selecionar2.php";
                         //include "includes/modal.php";
                     ?>
 

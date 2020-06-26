@@ -31,10 +31,10 @@
             color: #26119c;
         }
 
-        #eu:hover{
+        /*#eu:hover{
             color: black;
             background-color: green;
-        }
+        }*/
 
         .B{
             width: 80%;
@@ -76,6 +76,18 @@
             background-color: #585858;
             border-color: #585858;
             border-radius: 4px;
+        }
+
+        .fundo{
+            background: linear-gradient(to bottom, #4F4F4F, #000000, #4F4F4F);
+        }
+
+        .fundo2{
+            background: linear-gradient(to bottom, 	#1C1C1C, #1C1C1C);
+        }
+
+        .pesquisa{
+            border-radius: 5px;
         }
 
 

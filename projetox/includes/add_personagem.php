@@ -10,8 +10,9 @@ try {
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   // prepare sql and bind parameters
-  $stmt = $conn->prepare("INSERT INTO personagens (jogador, personagem, raca, classe, cyborgue)
-  VALUES (:jogador, :personagem, :raca, :classe, :cyborgue)");
+  $stmt = $conn->prepare('INSERT INTO personagens (jogador, personagem, raca, classe, cyborgue)
+  VALUES (:jogador, :personagem, :raca, :classe, :cyborgue);
+  ');
   $stmt->bindParam(':jogador', $jogador);
   $stmt->bindParam(':personagem', $personagem);
   $stmt->bindParam(':raca', $raca);

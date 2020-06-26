@@ -1,10 +1,11 @@
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <!--i class="fas fa-laugh-wink"></i-->
+          <img src="img/LL.png" height="60px" width="35px">
         </div>
         <div class="sidebar-brand-text mx-3">Sr. Lima <sup>2</sup></div>
       </a>
@@ -15,7 +16,6 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="index.php">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>home</span></a>
       </li>
 
@@ -44,12 +44,12 @@
         </div>
       </li>
 
-      <!-- Nav Item - Tables -->
+      <!-- Nav Item - Tables 
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
           <span>Tables</span></a>
-      </li>
+      </li>-->
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

@@ -30,7 +30,7 @@
         ?> 
 
     <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content-wrapper" class="d-flex flex-column fundo text-light">
 
       <!-- Main Content -->
       <div id="content">
@@ -39,6 +39,7 @@
             include "includes/topo.php";
             include "includes/editar.php";
             include "includes/conferirEdite.php";
+            include "includes/styleParaLinks.php";
         ?>
 
 
@@ -47,7 +48,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Editar personagem</h1>
+            <h1 class="h3 mb-0">Editar personagem</h1>
           </div>
 
           <!-- Content Row -->
