@@ -104,9 +104,6 @@ body {
 </style>
 </head>
 <body>
-<!--div class="text-center">
-	<a href="#myModal" class="trigger-btn" data-toggle="modal" data-target="#confirm-delete">Click to Open Confirm Modal</a>
-</div-->
 
 <!-- Modal HTML -->
 <div id="confirm-delete" class="modal fade">
@@ -123,9 +120,10 @@ body {
 				<p>Quer apagar os dados deste personagem? Não será possivel voltar atrás.</p>
 			</div>
 			<div class="modal-footer justify-content-center">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="i">Cancelar</i></button>
-				<button type="button" class="btn btn-danger btn-ok"><i class="i">Deletar</i></button>
-				<!--<a class="btn btn-danger btn-ok">Delete</a>-->
+				<a class="btn btn-secondary" data-dismiss="modal"><i class="i">Cancelar</i></a>
+				<!--button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="i">Cancelar</i></button>
+				<button type="button" class="btn btn-danger btn-ok"><i class="i">Deletar</i></button-->
+				<a class="btn btn-danger btn-ok"><i class="i">Deletar</i></a>
 			</div>
 		</div>
 	</div>
@@ -133,7 +131,7 @@ body {
 
 
 <script>
-	$('#confirm-delete').on('show.bs.modal', function(e) {
+	/*$('#confirm-delete').on('show.bs.modal', function(e) {
 		$(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
 	});
 
@@ -153,7 +151,7 @@ body {
 	var data = $(e.relatedTarget).data();
 	$('.title', this).text(data.recordTitle);
 	$('.btn-ok', this).data('recordId', data.recordId);
-	});
+	});*/
 </script>
 
 

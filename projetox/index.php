@@ -95,9 +95,18 @@
   <script src="vendor/chart.js/Chart.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js">
+<script src="js/demo/chart-pie-demo.js">
+</script>
+  
+  <script>
 
+	$('#confirm-delete').on('show.bs.modal', function(e) {
+    $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+  });
+  
+  
+  </script>
 </body>
 
 </html>
